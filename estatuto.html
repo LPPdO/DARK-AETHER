@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="darkreader-lock">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="icon" href="Imagens/iconPq.webp"> -->
+    <link rel="icon" href="favicon.ico">
+    <title>DARK &AElig;THER</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="content">
+            <input class="mobile-btn" type="checkbox" id="mobile-btn"/>
+            <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+            <ul class="nav">
+                <li><a href="index.html" title="Voltar">Voltar</a></li>
+            </ul>
+        </div>
+    </header>
+    <div><a href="#" class="logo"><img src="Imagens/icon.png" class="icon_DA" title="Dark Aether"></a></div>
+
+    <div style="height: 57px;" id="S1"></div>
+    <div style="background: white; height: 5px; border-radius: 50%;" align="center"></div>
+
+    <div align="center">
+        <img src="Imagens/Estatuto do Grupo Dark Æther/Estatuto do Grupo Dark Æther-1.png"
+        alt="" class="estatutoIMG">
+    </div>
+    <div align="center">
+        <img src="Imagens/Estatuto do Grupo Dark Æther/Estatuto do Grupo Dark Æther-2.png"
+        alt="" class="estatutoIMG">
+    </div>
+    <div align="center">
+        <img src="Imagens/Estatuto do Grupo Dark Æther/Estatuto do Grupo Dark Æther-3.png"
+        alt="" class="estatutoIMG">
+    </div>
+
+    <div>
+        <footer class="FT00"> <p>DARK &AElig;THER - 2025</p> </footer>
+            <div class="btnVT" align="right">
+	            <button class="btn-scroll-top icon_CT">
+      		        <img src="Imagens/seta.webp"
+        	        alt="Voltar ao topo"
+        	        width="10" height="10"/>
+	            </button>&nbsp;&nbsp;
+	            <br><span style="color: grey; font-size: 10px;">VOLTAR AO TOPO</span>&nbsp;&nbsp;
+            </div>
+    </div>
+
+    <script>
+        const btnScrollTop = document.querySelector(".btn-scroll-top");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                btnScrollTop.classList.add("show-btn-scroll-top");
+            } else {
+                btnScrollTop.classList.remove("show-btn-scroll-top");
+            }
+        });
+        btnScrollTop.addEventListener("click", () => {
+            window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+            });
+        });
+    </script>
+
+</body>
+</html>
